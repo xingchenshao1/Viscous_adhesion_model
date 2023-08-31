@@ -3,9 +3,9 @@ function out=YWdefsolve7()
 %% Experiment parameters
 
 E=2.1*1e6;% PDMS moudlus---unit: Pa
-hinitial=4200E-9;% Initial central separation---unit:m
+hinitial=;% Initial central separation---unit:m
 eta= 0.5;% Viscosity---unit: pa.s
-R=0.0074;% Radius of curvature---unit:m
+R=0.0071;% Radius of curvature---unit:m
 k=1021; % spring constant---unit:N/m
 
 v=10E-6;% %% Velocity Sign: 1) postive: retraction; 2) negative: approach
@@ -50,7 +50,7 @@ ShiftLengthdless = ShiftLength/hinitial;%non-dimesnialized shiftlength
 thicknessmax = R;
 thicknessdless = thicknessmax/((R*hinitial)^0.5);%non-dimesnialized film thickness
 time=0;
-tincre = 0.035;% time increment
+tincre = ;% time increment
 tincredless = tincre*-v/hinitial;%non-dimesnialized time step
 time=time+tincredless; 
 timestop=100;
